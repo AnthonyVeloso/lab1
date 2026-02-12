@@ -18,15 +18,15 @@ public class App {
         for (int i = 0; i < prompts.length; i++) {
 
             try {
-                agente.processarPrompt(prompts[i]);
+                    agente.processarPrompt(prompts[i]);
 
-            } catch (Exception e) {
-                String horario = LocalDateTime.now()
-                        .format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
+                } catch (Exception e) {
+                    String horario = LocalDateTime.now()
+                            .format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
 
-                System.err.println(
-                    "[LOG-AGENTE] [" + horario + "] Erro: " + e.getMessage()
-                );
+                    System.err.println(
+                            "[LOG-AGENTE] [" + horario + "] Erro: " + e.getMessage()
+                    );
             }
         }
     }
