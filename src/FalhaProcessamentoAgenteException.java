@@ -6,5 +6,7 @@ public class FalhaProcessamentoAgenteException extends Exception {
         this.timestamp = java.time.LocalDateTime.now().toString();
     }
 
-    public String getTimestamp() { return timestamp; }
+    public String getTimestamp() {
+        return timestamp;
+    }
 }
